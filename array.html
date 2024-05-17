@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-    
-//ARRAY CREATION
-let numbers=[10,20,30,40,50,60,70];
 
-console.log("Length Of array is : "+numbers.length)
-
-function arrayLength(value){
-    let a1=value
-    console.log(a1.lenth)
-}
-
-//MAXIMUM VALUE
-let maxvalue=Math.max(...numbers);
-console.log(maxvalue);
-
-//ARRAY REVERSE
-let names=["abhi","smita","sheetal","moto","abhishek"];
-console.log(names);
-console.log(names.reverse());
-
-//ARRAY SLICE
-console.log(names.slice(0,-1));
-
-//REMOVING DUPLICATE
-let arr=[1,1,5,5,8,9,56,47,54,64]
-console.log(arr.filter((value,index)=>arr.indexOf(value)===index));
-
-//FINDING INDEX
-console.log(arr.indexOf(5));
-console.log(arr[5])
-
+        // array length, max, min, reverse, index, duplicate remove
 
         
+        //ARRAY CREATION
+        let numbers = [10, 20, 30, 40, 50, 60, 70];
+
+        console.log("Length Of array is : " + numbers.length)
+
+        function arrayLength(value) {
+            let a1 = value   // why ?
+            console.log(a1.length)
+        }
+
+        //MAXIMUM VALUE
+        let maxvalue = Math.max(...numbers);
+        console.log(maxvalue);
+
+        //ARRAY REVERSE
+        let names = ["abhi", "smita", "sheetal", "moto", "abhishek"];
+        console.log(names);
+        console.log(names.reverse());
+
+        //ARRAY SLICE
+        console.log(names.slice(0, -1));
+
+        //REMOVING DUPLICATE
+        let arr = [1, 1, 5, 5, 8, 9, 56, 47, 54, 64]
+        console.log(arr.filter((value, index) => arr.indexOf(value) === index));
+
+        //FINDING INDEX
+        console.log(arr.indexOf(5));
+        console.log(arr[5])
+
+
+
     </script>
-    
+
 </body>
+
 </html>
