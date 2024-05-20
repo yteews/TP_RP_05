@@ -30,7 +30,7 @@
 
 
         // <!--add containt---->
-        addbutton.addEventListener('click', function (){
+        addbutton.addEventListener('click', function () {
             var paragraph = document.createElement('p')
             paragraph.innerText = inputField.value;
             // inputField.value = "";
@@ -43,19 +43,14 @@
                 paragraph.style.textDecoration = "line-through";
             });
             // <!--to delete a word-->
-            // paragraph.addEventListener('dblclick', function (){
-            //     container.removeChild(taskDiv);
-            // });
+            paragraph.addEventListener('dblclick', function (){
+                container.removeChild(taskDiv);
+            });
 
             taskDiv.appendChild(paragraph);
             taskDiv.appendChild(button);
             container.appendChild(taskDiv);
             inputField.value = "";
-
-
-
-
-
         });
     </script>
 
