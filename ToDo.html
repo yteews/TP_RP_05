@@ -4,55 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ToDo.css">
-    <title>To Do </title>
+    <link rel="stylesheet" href="todo.css">
+    <title>ToDo List</title>
 </head>
 
-<body class="header" style="">
-    <h1>To Do list</h1>
-    <!--input type-->
-    <input id="inputField" type="text">
-    <!--button-->
-    <button1 id="addbutton">Add</button1>
-    <!--storing place-->
-    <div class="todo" id="container" style="font-size: 25px;">
+<body>
+    <div class="main">
 
+        <!-- InputBox -->
+        <h1>My ToDo List</h1>
+        <input id="inputValue" type="text" placeholder="Enter Task">
+
+
+        <!-- button -->
+        <button1  
+            onclick="addTask()">Add Task</button1>
+
+       
+        <!-- ol tag -->
+        <ol id="taskList" >
+
+        </ol>
+    
     </div>
-
-
-    <!--java script-->
+    <!-- javascript -->
     <script>
-        let addbutton = document.getElementById('addbutton');
-        let container = document.getElementById('container');
-        let inputField = document.getElementById('inputField');
+        var listId = 0;
+        function addTask() {
+            var inputValue = document.getElementById("inputValue").value;
 
-        var taskDiv = document.createElement('div');
+            if (inputValue === "") {
+                return; // Don't add empty tasks
+            }
 
+            var ol = document.getElementById("taskList");
 
-        // <!--add containt---->
-        addbutton.addEventListener('click', function () {
-            var paragraph = document.createElement('p')
-            paragraph.innerText = inputField.value;
-            // inputField.value = "";
+            var li = document.createElement("li");
+
+            li.id = "list-" + listId;
+            li.innerText = inputValue;
 
             var button = document.createElement("button");
+
             button.innerText = "complete";
+            button.onclick = function () {
 
-            // <!--to bring the line above the word-->
-            button.addEventListener('click', function () {
-                paragraph.style.textDecoration = "line-through";
-            });
-            // <!--to delete a word-->
-            paragraph.addEventListener('dblclick', function (){
-                container.removeChild(taskDiv);
-            });
+                li.classList.toggle('completed');
 
-            taskDiv.appendChild(paragraph);
-            taskDiv.appendChild(button);
-            container.appendChild(taskDiv);
-            inputField.value = "";
-        });
+            };
+
+
+            ol.appendChild(li);
+
+            li.appendChild(button);
+
+            document.getElementById("inputValue").value = ''; // Clear input field
+            listId++;
+
+            // Add a CSS class for completed tasks
+            var style = document.createElement('style');
+            style.innerHTML = `
+            .completed {
+                text-decoration: line-through;
+                color: gray;
+            }`;
+
+            document.head.appendChild(style);
+
+        }
+
+
     </script>
+
 
 </body>
 

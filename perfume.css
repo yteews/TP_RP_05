@@ -1,0 +1,70 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+} */
+.card {
+    height: 502px;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+    margin: 109px 400px;
+    max-width: 656px;
+    border-radius: 10px 10px 10px 10px;
+
+
+}
+
+.container img {
+    height: 502px;
+    border-radius: 10px 1px 1px 10px;
+}
+
+.info {
+    margin: 7px 35px;
+    max-width: 209px;
+
+}
+
+.info p {
+    font-family: "Rajdhani", sans-serif;
+
+}
+
+.info h1 {
+    display: flex;
+    font-family: "DM Serif Display", serif;
+
+}
+.info h2 {
+    display: flex;
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    color: green;
+
+}
+.info strike p{
+    font-family: "Rajdhani", sans-serif;
+    font-size: 16px;
+    margin: 12px 19px;
+
+}
+
+.info p {
+    font-family: "Rajdhani", sans-serif;
+
+}
+.info  a {
+text-decoration: none;
+}
+
+.info button {
+    padding: 16px 52px;
+    height: 50px;
+    width: 209px;
+    border-radius: 15px;
+    background: #008e42;
+    color: white;
+    display: flex;
+    gap: 10px;
+
+}
