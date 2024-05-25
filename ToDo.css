@@ -8,9 +8,12 @@
     flex-direction: column;
     align-items: center;
     gap: 17px;
-    background-color: wheat;
-    height: 200px;
+    background-color: #a5a5a5;
+    height: 280px;
+    width: 671px;
     padding: 30px;
+    margin: 9px 0px 0px 426px;
+    border-radius: 15px;
 }
 
 .ol {
@@ -26,16 +29,41 @@
     height: 55px;
     width: 555px;
     font-size: 20px;
+    border-radius: 20px;
 }
 
 .main button1 {
     border: 2px solid black;
-    background-color: cornflowerblue;
+    background-color: #82f4ff;
     text-align: center;
     padding: 15px 20px;
+    border-radius: 15px;
 }
 
 .main li {
     font-size: 20px;
 
+}
+/* .ol{
+    margin: 40px 6px 11px 539px;
+    display: flex;
+    width: 500px;
+    height: 28px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: lightgrey;
+} */
+.ol li{
+    margin: 40px 6px 11px 81px;
+    display: flex;
+    width: 500px;
+    height: 28px;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: lightgrey;
+    gap: 15px;
 }
