@@ -32,12 +32,13 @@
 
 .info h1 {
     display: flex;
-    font-family: "DM Serif Display", serif;
+    font-family: "Fraunces", serif;
 
 }
 .info h2 {
     display: flex;
-    font-family: "DM Serif Display", serif;
+    font-family: "Fraunces", serif;
+    
     font-size: 32px;
     color: green;
 

@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* main sction */
+.main{
+    
+    height: 550px;
+    margin: 65px 10px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+/* main section div1 */
+.main1{
+display: flex;
+justify-content: space-between;
+}
+.batch img{
+height: 110px;
+}
+.certificate{
+    text-align: center;
+    margin: 47px 10px;
+}
+.certificate h1{ 
+    font-family: "Archivo Black", sans-serif;
+
+
+}
+.certificate p{
+    letter-spacing:4px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+}
+.logo img{
+    height: 110px;
+
+}
+/* main section div1  */
+
+.center{
+    font-family: "Archivo Black", sans-serif;
+
+    text-align: center;
+    font-size: 7px;
+
+}
+.center h1{
+
+}
+/* info */
+.info{
+    
+    text-align: center;
+    margin: 70px 122px;
+}
+.info p{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 23px;
+
+}
+.line{
+    margin: 20px 10px;
+    display: inline-block;
+    background-color: black;
+    height: 2px;
+    width: 920px;
+
+}
+/*  data */
+.data{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+.data p{
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+}
+.line1{
+    display: inline-block;
+    background-color: black;
+    height: 2px;
+    width: 129px;
+
+}
+.line2{
+    display: inline-block;
+    background-color: black;
+    height: 2px;
+    width: 129px;
+
+}
