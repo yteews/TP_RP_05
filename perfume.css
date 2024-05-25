@@ -26,6 +26,7 @@
 }
 
 .info p {
+    letter-spacing: 7px;
     font-family: "Rajdhani", sans-serif;
 
 }
@@ -50,7 +51,7 @@
 
 }
 
-.info p {
+.info p1 {
     font-family: "Rajdhani", sans-serif;
 
 }
