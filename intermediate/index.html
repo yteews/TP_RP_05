@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>login page</title>
 </head>
 <body>
+    <div class="log">
+    <div class="login">
     <!-- login form -->
     <h1>login</h1>
     <h1 id="sin">singup</h1>
     <h1 class="num">number</h1>
-    <form action="index.php" method="post">
-        <lable>username</lable>
-        <input type="text" name="username">
-        <lable>password</lable>
-        <input type="password" name="password" >
-        <!-- <lable>number</lable>
-        <input type="number" name="number"> -->
-        <input type="submit" value="submit">
+    <form action="index.php" method="post" class="form">
+       <label for="user">Username</label>
+       <input type="text" id="user">
+       <label for="pass">password</label>
+       <input type="text" id="pass">
+       <!-- <label for="user">mobile no.</label>
+       <input type="text" id="user"> -->
+       <input type="button" value="submit" id="button">
     </form>
+</div>
+</div>
     
 </body>
 </html>
