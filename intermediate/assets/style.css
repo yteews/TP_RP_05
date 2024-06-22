@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+:root{
+    --primary : rgb(241, 0, 0);
+    --secondary : black;
+    --white : aliceblue;
+    --light : aqua;
+}
+
+button,input[type="submit"]{
+    border-radius: 15px;
+    
+
+}
+
+
+
+
+
 /* global selector */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: "Signika Negative", sans-serif;
 }
 
 
@@ -68,6 +88,7 @@ margin: 80px;
     /* align-items: center; */
     padding: 19px;
     gap: 10px;
+    
 }
 .log{
     display: flex;
@@ -80,7 +101,7 @@ margin: 80px;
 
 .nav{
     display: flex;
-    background-color: aqua;
+    
     justify-content: space-between;
     height: 30px;
     padding: 20px;
@@ -103,7 +124,7 @@ cursor: pointer;
 
 /* nav section */
 .main{
-    background-color: aqua;
+    background-color:var(--primary);
     display: flex;
     justify-content: space-between;
 
@@ -128,13 +149,13 @@ cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover; */
     height: 500px;
-    background-color: black;
+    background-color:var(--secondary);
     display: flex;
     justify-content: space-around;
 
 }
 .para{
-    color: aliceblue;
+    color:var(--white);
     font-size: 30px;
     margin: 150px 10px;
 
@@ -147,12 +168,15 @@ cursor: pointer;
 
 }
 .img>img:hover{
-    color: aqua;
+    color: var(--light);
    box-shadow: 10px 10px 20px;
 }
 /* mian section end */
 
 /* form start */
+.info{
+
+}
 .class{
     display: flex;
 }
@@ -162,6 +186,12 @@ label{
 }
 input{
 
+}
+.main-btn{
+    background-color: var(--primary);
+    color: var(--white);
+    height: 28px;
+    width: 72px;
 }
 
 
